@@ -1,0 +1,17 @@
+name: "LeNet"
+input: "data"
+input_shape {
+  dim: 64
+  dim: 1
+  dim: 28
+  dim: 28
+}
+
+{% include 'base_network.prototxt' %}
+
+layer {
+  name: "prob"
+  type: "Softmax"
+  bottom: "ip2"
+  top: "prob"
+}
