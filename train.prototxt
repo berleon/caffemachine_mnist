@@ -155,9 +155,6 @@ layer {
   bottom: "ip2"
   bottom: "label"
   top: "accuracy"
-  include {
-    phase: TEST
-  }
 }
 layer {
   name: "loss"
