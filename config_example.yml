@@ -1,0 +1,17 @@
+name: lenet
+git_url: https://github.com/berleon/caffemachine_mnist.git
+git_tag: master
+networks:
+  small:
+    conv1_num_output: 13
+    conv2_num_output: 30
+    ip1_num_output: 250
+  medium:
+    conv1_num_output: 20
+    conv2_num_output: 50
+    ip1_num_output: 500
+  big:
+    conv1_num_output: 40
+    conv2_num_output: 100
+    ip1_num_output: 1000
+
